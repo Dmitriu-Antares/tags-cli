@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "target": "es5",
+    "lib": ["es5", "es6", "dom"],
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "baseUrl": "./client",
+    "paths": {
+      "components/*": ["components/*"],
+      "common/*": ["common/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "*.css"
+  ]
+}

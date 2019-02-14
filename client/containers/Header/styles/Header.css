@@ -1,0 +1,13 @@
+@import '../../../common/styles/wrappers.css';
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border {
+    composes: flex;
+    border-bottom: 1px solid black;
+}
+

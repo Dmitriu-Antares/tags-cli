@@ -1,0 +1,12 @@
+@import '../../../common/styles/wrappers.css';
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    border-bottom: 1px solid silver;
+    width: 100%;
+    padding: .5rem 0;
+}
