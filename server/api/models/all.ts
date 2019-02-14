@@ -1078,7 +1078,7 @@ const data = [{
     "sentiment": {
         "neutral": 5
     },
-    "sentimentScore": 895,
+    "sentimentScore": 1895,
     "burst": 60,
     "days": [{
         "date": "2014-06-06T00:00:00.000+0000",
