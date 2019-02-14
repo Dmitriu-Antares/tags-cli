@@ -28,6 +28,8 @@ export default class Tag extends Component<any, any> {
 
     render() {
         const { tags } = this.props
+        const tagId = this.props.match.params.id
+        const tag = tags.filter(tag => tag.id === tagId)[0]
 
         return(
             <div>
@@ -35,7 +37,7 @@ export default class Tag extends Component<any, any> {
                     <title>Tag</title>
                     <meta name="description" content="This is a proof of concept for React SSRss" />
                 </Helmet>
-                <TagLoadable tags={tags}/>
+                {tag && <TagLoadable tag={tag}/>}
             </div>
         )
     }

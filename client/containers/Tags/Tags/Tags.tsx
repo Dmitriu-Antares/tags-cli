@@ -10,7 +10,16 @@ export default class Tags extends Component<any, any> {
 
         return(
             <div className={styles.container}>
-
+                {tags.map(tag => {
+                    const fontSize = {
+                        fontSize: `${0.5 + tag.sentimentScore/200}rem`
+                    }
+                    return (
+                        <Link to={`/${tag.id}`} className={styles.link} key={tag.id}>
+                            <span className={styles.linkText} style={fontSize}>{tag.label}</span>
+                        </Link>
+                    )}
+                )}
             </div>
         )
     }
